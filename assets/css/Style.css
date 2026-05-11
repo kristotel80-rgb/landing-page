@@ -26,10 +26,10 @@ html{
 }
 
 /* BODY EFFECT */
-
 body{
  background:#ffffff;
  overflow-x:hidden;
+ position:relative;
 }
 
 /* FLOATING BACKGROUND */
@@ -73,7 +73,7 @@ body::after{
 
 /* NAVBAR SCROLL EFFECT */
 .navbar{
- transition:0.4s;
+ transition:0.4s ease;
 }
 
 .navbar.scrolled{
@@ -85,6 +85,7 @@ body::after{
 
 /* HERO TEXT EFFECT */
 .hero-content h1{
+
  background:linear-gradient(
  to right,
  #ffffff,
@@ -102,6 +103,7 @@ body::after{
 }
 
 .btn-secondary::before{
+
  content:'';
 
  position:absolute;
@@ -129,9 +131,11 @@ body::after{
 .card{
  cursor:pointer;
  position:relative;
+ overflow:hidden;
 }
 
 .card::after{
+
  content:'';
 
  position:absolute;
@@ -167,6 +171,7 @@ body::after{
 }
 
 .card-img::before{
+
  content:'';
 
  position:absolute;
@@ -184,6 +189,7 @@ body::after{
 /* FORM INPUT MODERN */
 .booking-form input,
 .booking-form select{
+
  transition:0.3s;
  border:2px solid transparent;
 }
@@ -200,6 +206,7 @@ body::after{
 /* BUTTON MODERN */
 .booking-form button{
  letter-spacing:0.5px;
+ transition:0.3s;
 }
 
 .booking-form button:hover{
@@ -210,6 +217,7 @@ body::after{
 .about h2,
 .jasa h2,
 .booking-text h2{
+
  position:relative;
  display:inline-block;
 }
@@ -240,11 +248,13 @@ body::after{
 
 /* GLASS EFFECT */
 .booking-form{
+
  position:relative;
  overflow:hidden;
 }
 
 .booking-form::before{
+
  content:'';
 
  position:absolute;
