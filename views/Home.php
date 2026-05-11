@@ -28,9 +28,11 @@
   </p>
 
   <div class="hero-btn">
-   <a href="#jasa" class="btn-secondary">
-    Our Services
+
+   <a href="#booking" class="btn-secondary">
+    Book Appointment
    </a>
+
   </div>
 
  </div>
@@ -40,7 +42,7 @@
 <!-- ABOUT -->
 <section class="about" id="about">
 
- <h2>About Us </h2>
+ <h2>About Us</h2>
 
  <p>
   Happy Paws hadir untuk memberikan layanan grooming
@@ -53,26 +55,27 @@
 <!-- SERVICES -->
 <section class="jasa" id="jasa">
 
- <h2>Our Services </h2>
+ <h2>Our Services</h2>
 
  <div class="grid">
 
- <?php foreach($jasa as $m): ?>
+  <?php foreach($jasa as $m): ?>
 
-  <div class="card">
+   <!-- CARD -->
+   <div class="card" onclick="location.href='#booking'">
 
-   <div class="card-img">
-    <img src="assets/image/<?= $m['gambar']; ?>">
+    <div class="card-img">
+     <img src="assets/image/<?= $m['gambar']; ?>">
+    </div>
+
+    <div class="card-body">
+     <h3><?= $m['nama']; ?></h3>
+     <p><?= $m['harga']; ?></p>
+    </div>
+
    </div>
 
-   <div class="card-body">
-    <h3><?= $m['nama']; ?></h3>
-    <p><?= $m['harga']; ?></p>
-   </div>
-
-  </div>
-
- <?php endforeach; ?>
+  <?php endforeach; ?>
 
  </div>
 
@@ -85,7 +88,7 @@
 
   <div class="booking-text">
 
-   <h2>Make an Appointment </h2>
+   <h2>Make an Appointment</h2>
 
    <p>
     Yuk jadwalkan treatment terbaik
